@@ -5,9 +5,9 @@ The main feature is the Env class, which gets rid of the hassle of building cust
 The following is a snippet of the full code example provided in the repo, just initialising the Env object:
 ```python
 def take_action(state,action):
-    oldx,oldy = state['blobs'][0].x,state['blobs'][0].y
-    state['blobs'][0].action(action)
-    newx,newy = state['blobs'][0].x,state['blobs'][0].y
+    oldx,oldy = state['blocks'][0].x,state['blocks'][0].y
+    state['blocks'][0].action(action)
+    newx,newy = state['blocks'][0].x,state['blocks'][0].y
     state['obs'] += [oldx-newx,oldy-newy,oldx-newx,oldy-newy]
 
     if np.count_nonzero(state['obs'][0,:2]) == 0:
