@@ -57,10 +57,10 @@ Env.help()
 
 *The flexibility of the Env class means that it can be used in pretty much any RL scenario, be it DQN, neuroevolution, or something completely new!*
 
-## Block, Snake
+## Block and Snake classes
 Block and Snake are two starter classes for simple RL scenarios on a 2D grid, so you can use them out-of-the-box without having to reinvent the wheel. Snake also has a get_observation method implemented, so it's paired nicely with the Env class
 
-## Agent, Population, PopulationTakeTop
+## Agent, Population, and PopulationTakeTop classes
 These classes are specific to neuroevolution, and come closely connected together and with the Env class.
 
 As seen in the code above, Agent has a get_action method (which just calls Keras' predict() on the observation), and Population expects an array of Agent objects.
