@@ -1,4 +1,4 @@
-# generalised-reinforcement-learning-environment
+# generalised-rl-environment
 ## The Env class
 The main feature is the Env class, which gets rid of the hassle of building custom environments, and instead asks; what is unique about your RL project?
 
